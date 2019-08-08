@@ -29,10 +29,12 @@
     PetOwner person = (PetOwner) context.getBean("id_petOwner"); // id_petOwner 는 id 값
     ```
     
-## 예시
+## XML 사용
 
 - animal.xml
 ```xml
+<!-- scope를 따로 지정하지 않으면 모두 singleton으로 객체 생성  -->
+
 <!-- constructor로 주입 -->
 <bean id="id_dog" class="kr.ac.hansung.spring.di.Dog">
   <constructor-arg value="poodle" />
@@ -63,3 +65,17 @@
 
 - 위의 코드와 같이 Main에서는 의존성 주입만 되었기 때문에 java 코드에서 해당 객체의 값이 무엇인지 상관이 없으며 xml의 설정만 바꾸어 주면 어떤 값(강아지던지, 고양이던지)이던 상관이 없다.  
 - 의존성 주입은 setter로 할 수도 있고, Constructor로도 해줄 수 있다.
+
+
+## Annotation 사용
+- xml이 길어서 Annotation을 사용하기도 한다.
+- xml과 annotation 둘다 사용중이라면 xml이 annotation을 override 한다.
+- xml에 annotation을 활성화해주어야한다.
+
+```xml
+<context:annotation-config></context:annotation-config>
+```
+1. @Required
+2. @Autowired
+3. @Qualifier
+4. @Resource
