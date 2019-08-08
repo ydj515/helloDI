@@ -1,6 +1,6 @@
 # helloDI
 
-## What is DI
+## What is DI?
 - DI(Dependency Injection)  
 -프로그래밍에서 구성요소 간의 의존 관계가 소스코드 내부가 아닌 외부의 설정파일을 통해 정의되는 방식  
 -코드 재사용을 높여 소스코드를 다양한 곳에 사용할 수 있으며 모듈간의 결합도도 낮춤  
@@ -75,6 +75,7 @@
 ```xml
 <context:annotation-config></context:annotation-config>
 ```
+
 ### @Required
 ![1](https://user-images.githubusercontent.com/32935365/62724600-5226ca00-ba4e-11e9-81bf-5bee22ba509e.PNG)  
 
