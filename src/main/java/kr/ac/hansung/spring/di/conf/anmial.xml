@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- constructor로 주입 -->
+	<bean id="id_dog" class="kr.ac.hansung.spring.di.Dog">
+		<constructor-arg value="poodle" />
+		<qualifier value="qf_dog"></qualifier>
+	</bean>
+
+	<!-- setter로 주입 -->
+	<bean id="id_cat" class="kr.ac.hansung.spring.di.Cat">
+		<property name="myName" value="bella"></property>
+		<qualifier value="qf_cat"></qualifier>
+	</bean>
+
+	<!-- 생성자로로 주입. petOwner class에서 @RequiredArgsConstructor 해줫기 때문에 -->
+	<bean id="id_petOwner" class="kr.ac.hansung.spring.di.PetOwner">
+	</bean>
+
+	<!-- anotation기능 활성화 -->
+	<context:annotation-config></context:annotation-config>
+</beans>
