@@ -79,11 +79,11 @@
 ### @Required
 ![1](https://user-images.githubusercontent.com/32935365/62724600-5226ca00-ba4e-11e9-81bf-5bee22ba509e.PNG)  
 
-### @Autowired
+### @Autowired : writting by type
 ![2](https://user-images.githubusercontent.com/32935365/62724635-666ac700-ba4e-11e9-8a8a-ad7caea7fd85.PNG)
 
 ### @Qualifier
 ![3](https://user-images.githubusercontent.com/32935365/62724710-89957680-ba4e-11e9-9482-e0d506eb7a3e.PNG)
 
-### @Resource
+### @Resource : writting by name
 ![4](https://user-images.githubusercontent.com/32935365/62724716-9023ee00-ba4e-11e9-9e12-66c808acee46.PNG)
